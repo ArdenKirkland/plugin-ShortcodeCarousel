@@ -6,10 +6,10 @@
             
             <?php if(isset($configs['carousel']['image_type'])) {
 
-                $image_type = $configs['image_type'];
+                $image_size = $configs['image_type'];
 
                 echo link_to_item(
-                item_image($image_type, array(), 0, $item),
+                item_image($image_size, array(), 0, $item),
                 array('class' => 'shortcode-carousel-image'), 'show', $item
                 );
             }

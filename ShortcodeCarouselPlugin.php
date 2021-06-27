@@ -105,7 +105,7 @@ class ShortcodeCarouselPlugin extends Omeka_Plugin_AbstractPlugin
         }
         
         if (isset($args['image_type'])) {
-            $configs['image_type'] = $args['image_type']; }
+            $configs ['image_type'] = $args['image_type']; }
         
 		//autoscroll configs
         if(isset($args['autoscroll']) && $args['autoscroll'] == 'true') {
