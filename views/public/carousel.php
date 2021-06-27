@@ -4,11 +4,23 @@
         <?php foreach($items as $item): ?>
             <li>
             
-            <?php echo link_to_item(
-                    item_image('square_thumbnail', array(), 0, $item), 
-                    array('class' => 'shortcode-carousel-image'), 'show', $item
-                    );
+            <?php if(isset($configs['carousel']['image_type'])) {
+
+                $image_type = $configs['image_type'];
+
+                echo link_to_item(
+                item_image($image_type, array(), 0, $item),
+                array('class' => 'shortcode-carousel-image'), 'show', $item
+                );
+            }
+            else {
+                echo link_to_item(
+                item_image('square_thumbnail', array(), 0, $item),
+                array('class' => 'shortcode-carousel-image'), 'show', $item
+                );
+            }
             ?>
+
             <?php if(isset($configs['carousel']['showTitles']) && $configs['carousel']['showTitles'] ): ?>
                 <p class="shortcode-carousel-title">
                 <a href="<?php echo record_url($item, 'show'); ?>">
