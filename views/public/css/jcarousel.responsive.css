@@ -27,11 +27,7 @@
 }
 
 .jcarousel li {
-<<<<<<< HEAD
     width: 800px;
-=======
-    width: 200px;
->>>>>>> e06bca29e4134bb039ed09c30353a3eeec99985e
     float: left;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;

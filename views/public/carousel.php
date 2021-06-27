@@ -5,11 +5,7 @@
             <li>
             
             <?php echo link_to_item(
-<<<<<<< HEAD
-                    item_image('fullsize', array(), 0, $item), 
-=======
-                    item_image('square_thumbnail', array(), 0, $item), 
->>>>>>> e06bca29e4134bb039ed09c30353a3eeec99985e
+                    item_image('fullsize', array(), 0, $item),
                     array('class' => 'shortcode-carousel-image'), 'show', $item
                     );
             ?>
