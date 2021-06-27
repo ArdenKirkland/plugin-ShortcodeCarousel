@@ -7,10 +7,17 @@
                 var element = $(this),
                     width = element.innerWidth();
 
+<<<<<<< HEAD
                     if (width >= 1200) {
                         width = width / 2;
                     } else if (width >= 350) {
                         width = width / 1;
+=======
+                    if (width >= 600) {
+                        width = width / 3;
+                    } else if (width >= 350) {
+                        width = width / 2;
+>>>>>>> e06bca29e4134bb039ed09c30353a3eeec99985e
                     }
 
                     element.jcarousel('items').css('width', width + 'px');
