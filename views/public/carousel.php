@@ -5,7 +5,7 @@
             <li>
             
             <?php echo link_to_item(
-                    item_image('square_thumbnail', array(), 0, $item), 
+                    item_image('fullsize', array(), 0, $item), 
                     array('class' => 'shortcode-carousel-image'), 'show', $item
                     );
             ?>
